@@ -29,6 +29,11 @@ class Scsi(Plugin, IndependentPlugin):
         ])
 
         self.add_cmd_output("lsscsi -i", suggest_filename="lsscsi")
+        self.add_cmd_output("lsscsi -H")
+        self.add_cmd_output("lsscsi -g")
+        self.add_cmd_output("lsscsi -d")
+        self.add_cmd_output("lsscsi -s")
+        self.add_cmd_output("lsscsi -L")
         self.add_cmd_output("sg_map -x")
         self.add_cmd_output("lspath")
         self.add_cmd_output("lsmap -all")
